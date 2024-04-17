@@ -1,0 +1,192 @@
+/**
+============== Variable ==================
+**/
+:root{
+    --color-primary-1 : hsl(136, 65%, 51%);
+    --color-primary-2 : hsl(192, 70%, 51%);
+    --color-primary-3 : hsl(233, 26%, 24%);
+    --color-neutral-100 : hsl(0, 0%, 100%);
+    --color-neutral-200 : hsl(0, 14%, 97%);
+    --color-neutral-300 : hsl(220, 16%, 96%);
+    --color-neutral-400 :  hsl(233, 8%, 62%);
+
+    --font-primary : 'Public Sans', sans-serif;
+}
+
+/**
+=============== Normalization =================
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--font-primary);
+    font-size: 17px;
+}
+
+/**
+============== Reusable ===============
+**/
+.container{
+    max-width: 1220px;
+    margin: auto;
+}
+.btn{
+    padding: 15px 20px;
+    border: none;
+    color: var(color-neutral-100);
+    background-image: linear-gradient(to right bottom, var(--color-primary-1), var(--color-primary-2));
+    border-radius: 20px;
+}
+
+/**
+============== Header Styles ==================
+**/
+
+header{
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-neutral-100);
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    padding: 20px 0;
+    color: var(--color-neutral-400);
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    
+}
+
+/**
+===============Hero style ===================
+**/
+.hero-section{
+    background-color: var(--color-neutral-200);
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: relative;
+}
+
+.hero-section .container{
+    display: flex;
+}
+
+.hero-section .hero-content{
+    width: 30%;
+    padding: 170px 0;
+    font-family: var(--font-primary);
+}
+
+.hero-content .hero-title{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.hero-content .hero-text{
+    margin: 30px 0;
+    color: var(--color-neutral-400);
+    line-height: 1.6;
+}
+
+.hero-banner img{
+    position:absolute;
+    right: 0;
+    top: -100px;
+    z-index: 1;
+}
+
+/*wy us */
+
+.why-us {
+    background-color: var(--color-neutral-300);
+    padding: 150px 0;
+}
+
+.why-us  h1{
+    font-size: 40px;
+    font-weight: 300;
+    
+
+}
+.why-us p{
+    margin: 20px 0;
+    width: 50%;
+    color: var(--color-neutral-400);
+    line-height: 1.6;
+}
+
+ .services{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;  
+}
+
+.service-title{
+    font-size: 25px;
+    margin: 15px 0;
+    
+}
+
+ .description{
+    color: var(--color-neutral-400);
+    line-height: 1.6;
+ }
+
+
+
+ /*article item */
+ .latest-article{
+    padding: 150px 0;
+ }
+  .latest-article h1{
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .articles{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    
+  }
+   
+.articles .article{
+    width: 25%;
+}
+
+.article img{
+    width: 100%;
+}
+
+.article p{
+    font-size: 14px;
+    color: var(--color-neutral-400);
+}
+
+.article-title{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.article-content{
+    color: var(--color-neutral-400);
+    line-height: 1.6;
+}
